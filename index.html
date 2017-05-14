@@ -5,8 +5,10 @@
 	<meta charset="utf-8" http-equiv="x-ua-compatible" content="ie=edge">
 	<title>响应式网站</title>
 	<meta charset="utf-8" name="viewport" content="wdith=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.css">
 </head>
 <body>
 	<!--[if lte IE8]>
@@ -37,7 +39,7 @@
     </header>
 
     <div class="container">
-        <div class="transaction">
+        <div class="transaction clearfix">
             <div class="trans-content">
                 <div class="trans-data">
                     <span>平台累计成交金额</span>
@@ -55,14 +57,16 @@
             </div>
         </div>
         <div class="ad">
-            <div class="item">
-                <img src="./img/1.jpg">
-            </div>
-            <div class="item">
-                <img src="./img/2.jpg">
-            </div>
-            <div class="item">
-                <img src="./img/3.jpg">
+            <div class="owl-theme owl-carousel">
+                <div class="item">
+                    <img src="./img/1.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/2.jpg">
+                </div>
+                <div class="item">
+                    <img src="./img/3.jpg">
+                </div>
             </div>
         </div>
         <div class="feature">
@@ -234,5 +238,8 @@
     	</ul>
     </footer>
 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
